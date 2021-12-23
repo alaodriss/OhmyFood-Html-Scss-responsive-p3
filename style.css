@@ -1,0 +1,619 @@
+.coeur,
+.coeur-menus {
+  height: 20px;
+  width: 21px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  bottom: 38px;
+  right: -31px;
+  background-color: black;
+  border-color: transparent;
+  margin: 0px 0px 0px 235px;
+}
+.coeur:hover i.coeur__cadre,
+.coeur-menus:hover i.coeur__cadre {
+  opacity: 0;
+}
+.coeur:hover::before,
+.coeur-menus:hover::before {
+  opacity: 1;
+}
+.coeur::before,
+.coeur-menus::before {
+  opacity: 0;
+  transition: 0.5s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, #FF79DA, #9356dc);
+}
+.coeur i,
+.coeur-menus i {
+  transition-duration: 350ms;
+  background-color: #f2F2F2;
+  position: absolute;
+  /* top: 0; */
+  /* left: 0; */
+  /* height: 100%; */
+  /* width: 100%;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: lighten;
+}
+.coeur i.blanche,
+.coeur-menus i.blanche {
+  background-color: #FFFFFF;
+}
+.coeur .coeur__rempli, .coeur .blanche,
+.coeur-menus .coeur__rempli,
+.coeur-menus .blanche {
+  background-color: #f2F2F2;
+}
+
+/**********************************loding**************/
+.loading {
+  z-index: 3;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  animation: loading-disappear 1s 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loading-disappear {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+@keyframes loading-effect {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    color: #99E2D0;
+  }
+  30% {
+    transform: scale(1.5);
+  }
+  40% {
+    color: #FF79DA;
+  }
+  60% {
+    color: #9356dc;
+    transform: scale(1);
+  }
+  90% {
+    transform: scale(1.5);
+  }
+  100% {
+    color: #000000;
+    opacity: 1;
+  }
+}
+.loading {
+  width: 100%;
+  height: 100%;
+}
+
+svg {
+  width: 50%;
+  fill: none;
+}
+
+.load {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 570;
+  stroke-width: 20px;
+}
+.load.one {
+  stroke: #99E2D0;
+  animation: load 1.5s infinite;
+}
+.load.two {
+  stroke: #FF79DA;
+  animation: load 1.5s infinite;
+  animation-delay: 0.1s;
+}
+.load.three {
+  stroke: #9356dc;
+  animation: load 1.5s infinite;
+  animation-delay: 0.2s;
+}
+
+.point {
+  animation: bounce 1s infinite ease-in-out;
+}
+.point.one {
+  fill: #9356dc;
+  animation-delay: 0s;
+}
+.point.two {
+  fill: #FF79DA;
+  animation-delay: 0.1s;
+}
+.point.three {
+  fill: #99E2D0;
+  animation-delay: 0.2s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes load {
+  0% {
+    stroke-dashoffset: 570;
+  }
+  50% {
+    stroke-dashoffset: 530;
+  }
+  100% {
+    stroke-dashoffset: 570;
+    transform: rotate(360deg);
+  }
+}
+/** Chargement style global*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  list-style-type: none;
+}
+
+@font-face {
+  font-family: "Shrikhand";
+  font-style: normal;
+  src: url("./public/fonts/Shrikhand-Regular.ttf");
+}
+body {
+  font-family: "Roboto";
+}
+
+/*flesh*/
+i.fa-arrow-left {
+  font-size: 1.3rem;
+  color: black !important;
+  position: absolute;
+  left: 6%;
+  top: 27px;
+}
+
+.subtitre {
+  text-align: center;
+  font-family: system-ui;
+}
+
+/** Chargement style Components*/
+/********* btn home page *****/
+.btn {
+  background: linear-gradient(180deg, #FF79DA, #9356dc);
+  box-shadow: 1px 2px 10px 1px #b6b5b5;
+  color: #ffffff;
+  font-size: 15px;
+  border-radius: 50px;
+  padding: 0.8em;
+  padding-right: 2em;
+  padding-left: 2em;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/************** btn commander_*****/
+.btn-2 {
+  background: linear-gradient(180deg, #FF79DA, #9356dc);
+  box-shadow: 1px 2px 10px 1px #b6b5b5;
+  color: #ffffff;
+  font-size: 15px;
+  border-radius: 50px;
+  padding: 0.8em;
+  padding-right: 2em;
+  padding-left: 2em;
+  border: none;
+  cursor: pointer;
+  margin: 20px 28px 25px 110px;
+}
+
+.bloc-m {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 1px 2px 10px 1px silver;
+  margin: 20px;
+  padding: 5px;
+  animation: menu 2s ease-in-out both;
+}
+.bloc-m .check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 19px;
+  background-color: #99E2D0;
+  height: 76px;
+  width: 0px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+  transition: 500ms;
+  margin: -71px 0px 12px 235px;
+}
+.bloc-m .check .fa-check-circle {
+  font-size: 2rem;
+  color: white !important;
+}
+.bloc-m:hover {
+  cursor: pointer;
+}
+.bloc-m:hover .text-1 {
+  width: 71%;
+}
+.bloc-m:hover .text-2 {
+  width: 78%;
+}
+.bloc-m:hover .check {
+  transition: width 500ms;
+  width: 20%;
+}
+.bloc-m:hover .fa-check-circle {
+  animation: rotating 500ms;
+}
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes menu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+.animation-1 {
+  animation-delay: 0.5s;
+}
+
+.animation-2 {
+  animation-delay: 1s;
+}
+
+.animation-3 {
+  animation-delay: 1.5s;
+}
+
+.animation-4 {
+  animation-delay: 2s;
+}
+
+.animation-5 {
+  animation-delay: 2.5s;
+}
+
+.animation-6 {
+  animation-delay: 3s;
+}
+
+.animation-7 {
+  animation-delay: 3.5s;
+}
+
+.animation-8 {
+  animation-delay: 4s;
+}
+
+.animation-9 {
+  animation-delay: 4.5s;
+}
+
+.animation-10 {
+  animation-delay: 5s;
+}
+
+.animation-11 {
+  animation-delay: 5.5s;
+}
+
+.animation-12 {
+  animation-delay: 6s;
+}
+
+.animation-13 {
+  animation-delay: 6.5s;
+}
+
+.animation-14 {
+  animation-delay: 7s;
+}
+
+.animation-15 {
+  animation-delay: 7.5s;
+}
+
+.animation-16 {
+  animation-delay: 8s;
+}
+
+.animation-17 {
+  animation-delay: 8.5s;
+}
+
+.animation-18 {
+  animation-delay: 9s;
+}
+
+.animation-19 {
+  animation-delay: 9.5s;
+}
+
+.animation-20 {
+  animation-delay: 10s;
+}
+
+/** Chargement style layouts*/
+/******** bar search  *******/
+input {
+  border: none;
+  background: #eaeaea;
+  padding: 20px 0px 13px 6px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.localisation {
+  width: 100%;
+  height: 3.64rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #eaeaea;
+  box-shadow: 0 4px 6px -6px #b3b3b3 inset;
+}
+.localisation .icon-loca {
+  margin: 16px 0 0 13px;
+}
+
+/*********---slide --********/
+.slide {
+  background-color: #f6f6f6;
+}
+
+.con-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.con-slide .titre {
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.con-slide .subtitr {
+  text-align: center;
+  font-family: system-ui;
+}
+
+/*********---menu --********/
+.fa-heart {
+  color: gray;
+  font-size: 1.4rem;
+}
+
+.fon {
+  padding: 30px 30px 0px 30px;
+}
+
+.bloc-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+.bloc-list .numero {
+  position: absolute;
+  left: -15px;
+}
+
+.bloc-list li {
+  position: relative;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  box-shadow: 0px 3px 5px 2px gainsboro;
+  padding-right: 2.5em;
+  border-radius: 20px;
+  list-style-type: none;
+  width: 100%;
+  margin-bottom: 1.5em;
+  cursor: pointer;
+  transition-duration: 500ms;
+}
+.bloc-list li:hover {
+  background-color: #f2eafb;
+  transform: scale(1.02);
+}
+.bloc-list li i {
+  margin-right: 1em;
+  margin-left: 2em;
+  color: gray;
+}
+
+.numero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  background-color: #9356dc;
+  color: #ffffff;
+  border-radius: 50%;
+}
+
+/********************Restaurants*************/
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.message {
+  background-color: #99E2D0;
+  color: #3e7869;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 220px;
+  padding: 0.5em;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.groupe-restaurants {
+  background: #F2F2F2;
+  padding: 30px 30px 30px 30px;
+}
+.groupe-restaurants h1 {
+  padding-bottom: 20px;
+}
+
+.bloc {
+  background-color: white;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 5px 2px gainsboro;
+}
+
+.bloc img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+#clickableAwesomeFont {
+  cursor: pointer;
+}
+
+.bloc-text {
+  padding: 0px 16px 9px 7px;
+}
+.bloc-text h2 {
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+.bloc-text p {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+/****************************footer********/
+.con-footer {
+  background-color: #2E2E2E;
+  color: #ffffff;
+  padding: 1.5em;
+  padding-bottom: 3em;
+  font-family: system-ui;
+}
+.con-footer ul, .con-footer li {
+  margin: 1rem 1rem 1rem 0.3rem;
+}
+
+.titre-footer {
+  font-family: "Shrikhand";
+  margin-bottom: 1em;
+  font-size: 1.7rem;
+}
+.titre-footer .icon1, .titre-footer .icon2 {
+  padding-right: 10px;
+}
+
+/***************page_Francaise*******/
+.img-slide {
+  width: 100%;
+  height: auto;
+}
+
+.con-section {
+  background: #f2f2f2;
+  margin-top: -43px;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  position: relative;
+  width: 100%;
+}
+.con-section h1 {
+  font-family: Shrikhand;
+  padding: 25px;
+}
+
+.titres {
+  margin: 27px 0px 10px 27px;
+  max-width: 40px;
+  border-bottom: 2px solid #99E2D0;
+  font-family: sans-serif;
+}
+
+.text-1, p {
+  padding: 7px 11px 0px 12px;
+  font-size: small;
+  font-family: sans-serif;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.text-1 p, p p {
+  font-family: sans-serif;
+  padding-left: 1px;
+}
+
+.text-2 {
+  display: flex;
+  justify-content: end;
+  margin: -18px 14px 0px 0px;
+  padding: 3px 6px 9px 0px;
+  font-size: 16px;
+}
+
+.sous-menu {
+  padding: 0px 11px 0px 0px;
+}
+
+/*# sourceMappingURL=style.css.map */

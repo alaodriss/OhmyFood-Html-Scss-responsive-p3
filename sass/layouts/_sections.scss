@@ -1,0 +1,144 @@
+/*********---slide --********/
+
+.slide{
+    background-color:#f6f6f6;
+}
+.con-slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+        .titre{
+            font-size: 1.5rem;
+            margin-bottom: 1em;
+            text-align:center;
+        }
+        .subtitr{
+            text-align:center;
+            font-family: system-ui;
+        }
+        
+}
+
+
+
+
+/*********---menu --********/
+
+
+
+.fa-heart {
+    color: gray;
+    font-size: 1.4rem;
+}
+
+.fon{
+    padding: 30px 30px 0px 30px;
+}
+
+.bloc-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+        .numero {
+            position: absolute;
+            left: -15px;
+        }
+}
+
+.bloc-list li {
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    box-shadow: 0px 3px 5px 2px gainsboro;
+    padding-right: 2.5em;
+    border-radius: 20px;
+    list-style-type: none;
+    width: 100%;
+    margin-bottom: 1.5em;
+    cursor: pointer;
+    transition-duration: 500ms;
+        &:hover {
+            background-color: #f2eafb;
+            transform: scale(1.02);
+        }
+            i {
+                margin-right: 1em;
+                margin-left: 2em;
+                color: gray;
+            }
+}
+
+.numero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    background-color: #9356dc;
+    color: #ffffff;
+    border-radius: 50%;
+}
+
+
+
+/********************Restaurants*************/
+a {
+    text-decoration: none;
+    color: black;
+}
+.message {
+    background-color: #99E2D0;
+    color: #3e7869;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 220px;
+    padding: 0.5em;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.groupe-restaurants{
+    background: #F2F2F2;
+    padding: 30px 30px 30px 30px;
+        h1{
+            padding-bottom: 20px;
+        }
+}
+.bloc {
+    background-color: white;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 5px 2px gainsboro;
+
+}
+.bloc img{
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+
+#clickableAwesomeFont{
+    cursor: pointer;
+
+}
+
+.bloc-text{
+    padding: 0px 16px 9px 7px;
+    h2 {
+        font-size: 20px;
+        padding-bottom: 5px;
+        }
+        p {
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+
+}
