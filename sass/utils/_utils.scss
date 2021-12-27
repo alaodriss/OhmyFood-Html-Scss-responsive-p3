@@ -34,26 +34,23 @@
      width: 100%;
      background: linear-gradient(
       180deg, #FF79DA, #9356dc);   }
-   i{
-    transition-duration: 350ms;
-    background-color: #f2F2F2;
-    position: absolute;
-        /* top: 0; */
-    /* left: 0; */
-    /* height: 100%; */
-    /* width: 100%;*/
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    mix-blend-mode: lighten;
-  }
-  i.blanche{
-   background-color: #FFFFFF;
-  }
-
-  .coeur__rempli,.blanche{
-    background-color:#f2F2F2;
-  }
+      i{
+        transition-duration: 350ms;
+        background-color: #f2F2F2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        mix-blend-mode: lighten;
+      }
+      i.blanche{
+       background-color: #FFFFFF;
+      }
+    
 }
 
 

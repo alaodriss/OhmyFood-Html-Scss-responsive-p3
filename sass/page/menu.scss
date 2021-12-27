@@ -1,6 +1,7 @@
 /*************** mode Ipad *************/
 
     @media all and (min-width: $sm) {
+      
     .bloc-menu{margin: 10px 50px 50px 50px;
       }
       .bloc-m .check {
@@ -12,4 +13,30 @@
       .btn-2{
         margin: 0px 28px 25px 312px;
       }
+}
+
+/*************** mode descktop *************/
+@media all and (min-width: $md) {
+
+  .all-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;  
+
+  }
+  .bloc-m .check {
+    position: relative;
+    float: right;
+    left: 10px;
+
+  }
+  .bloc-m:hover .text-2 {
+    width:84%;
+}
+
+  .btn-2{
+    margin: 0px 28px 25px 652px;
+  }
+  
+
 }
