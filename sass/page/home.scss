@@ -11,15 +11,13 @@
   
 .bloc-list{      
         display: flex;
-        flex-direction: row;        
+        flex-direction: row;
+      
       }
-      li{
-        margin: 40px;
+li{
+        margin: 20px;
 
       }
-
-
-
 
 .groupe-restaurants{
         display: grid;
