@@ -1,0 +1,15 @@
+/*************** mode Ipad *************/
+
+    @media all and (min-width: $sm) {
+    .bloc-menu{margin: 10px 50px 50px 50px;
+      }
+      .bloc-m .check {
+        right: 70px;
+      }
+      .bloc-m:hover .text-2 {
+        width: 74%;
+    }
+      .btn-2{
+        margin: 0px 28px 25px 312px;
+      }
+}

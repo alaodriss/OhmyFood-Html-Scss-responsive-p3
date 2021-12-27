@@ -505,11 +505,11 @@ a {
   font-weight: bold;
 }
 
-.groupe-restaurants {
+.restaurants {
   background: #F2F2F2;
   padding: 30px 30px 30px 30px;
 }
-.groupe-restaurants h1 {
+.restaurants h1 {
   padding-bottom: 20px;
 }
 
@@ -565,6 +565,50 @@ a {
   padding-right: 10px;
 }
 
+/*************** mode Ipad *************/
+@media all and (min-width: 768px) {
+  .bloc-list {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.bloc-list li {
+  margin: 20px;
+}
+
+@media all and (min-width: 768px) {
+  .groupe-restaurants {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+}
+.groupe-restaurants .message {
+  margin-left: 242px;
+}
+.groupe-restaurants .coeur, .groupe-restaurants .coeur-menus {
+  right: -60px;
+}
+
+/*************** mode Ipad *************/
+@media all and (min-width: 768px) {
+  .bloc-menu {
+    margin: 10px 50px 50px 50px;
+  }
+
+  .bloc-m .check {
+    right: 70px;
+  }
+
+  .bloc-m:hover .text-2 {
+    width: 74%;
+  }
+
+  .btn-2 {
+    margin: 0px 28px 25px 312px;
+  }
+}
 /***************page_Francaise*******/
 .img-slide {
   width: 100%;

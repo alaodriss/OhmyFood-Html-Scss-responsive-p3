@@ -1,0 +1,30 @@
+
+/*************** mode Ipad *************/
+
+
+.bloc-list{
+    @media all and (min-width: $sm) {
+        display: flex;
+        flex-direction: row;        
+      }
+      li{
+        margin: 20px;
+
+      }
+}
+
+.groupe-restaurants{
+
+    @media all and (min-width: $sm) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(100px, auto);       
+      }
+      .message{
+        margin-left: 242px;
+      }
+      .coeur, .coeur-menus {
+        right: -60px;
+    }
+}
