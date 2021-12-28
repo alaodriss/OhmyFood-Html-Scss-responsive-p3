@@ -236,6 +236,10 @@ i.fa-arrow-left {
   font-family: sans-serif;
 }
 
+.titre-2 {
+  padding: 0px 0px 23px 5px;
+}
+
 .text-1, p {
   padding: 7px 11px 0px 12px;
   font-size: small;
