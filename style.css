@@ -55,9 +55,9 @@
 .coeur-menus i.blanche {
   background-color: #f2F2F2;
 }
-.coeur-menus i.blanche .coeur-menus {
-  margin: 10px 20px 10px 10px;
-  right: -151px;
+
+.coeur-menus {
+  top: -26px;
 }
 
 /**********************************loding**************/
@@ -224,9 +224,9 @@ i.fa-arrow-left {
   position: relative;
   width: 100%;
 }
-.con-section h1 {
+.con-section h3 {
   font-family: Shrikhand;
-  padding: 25px 1px 10px 12px;
+  padding: 26px 1px 0px 23px;
 }
 
 .titres {
@@ -263,6 +263,10 @@ i.fa-arrow-left {
 
 .sous-menu {
   padding: 0px 11px 0px 0px;
+}
+
+.mail {
+  color: #fff;
 }
 
 /** Chargement style Components*/
@@ -695,7 +699,7 @@ a {
 }
 /*************** mode Ipad *************/
 @media all and (min-width: 768px) {
-  .con-section h1 {
+  .con-section h3 {
     padding: 25px 1px 10px 72px;
   }
 

@@ -12,6 +12,7 @@
   right: -85%;
   background-color: black;
   border-color: transparent;
+  
    &:hover{
        i.coeur__cadre{
           opacity: 0;
@@ -47,6 +48,7 @@
         align-items:center;
         justify-content:center;
         mix-blend-mode: lighten;
+        
 
     
       }
@@ -58,10 +60,11 @@
 .coeur-menus i.blanche{
   background-color: #f2F2F2;
 
-  .coeur-menus {
-    margin: 10px 20px 10px 10px;
-    right: -151px;
-  }
+}
+.coeur-menus {
+
+  top:-26px;
+    
 }
 
 
