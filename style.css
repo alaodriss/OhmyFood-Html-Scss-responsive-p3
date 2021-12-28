@@ -2,17 +2,16 @@
 .coeur-menus {
   height: 20px;
   width: 21px;
-  padding: 20px 20px 20px 20px;
+  padding: 21px 0px 0px 27px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   position: relative;
   bottom: 38px;
-  right: -95px;
+  right: -85%;
   background-color: black;
   border-color: transparent;
-  margin: 0px 0px 0px 175px;
 }
 .coeur:hover i.coeur__cadre,
 .coeur-menus:hover i.coeur__cadre {
@@ -58,6 +57,7 @@
 }
 .coeur-menus i.blanche .coeur-menus {
   margin: 10px 20px 10px 10px;
+  right: -151px;
 }
 
 /**********************************loding**************/
@@ -214,6 +214,51 @@ i.fa-arrow-left {
 .img-slide {
   width: 100%;
   height: auto;
+}
+
+.con-section {
+  background: #f2f2f2;
+  margin-top: -43px;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  position: relative;
+  width: 100%;
+}
+.con-section h1 {
+  font-family: Shrikhand;
+  padding: 25px 1px 10px 12px;
+}
+
+.titres {
+  margin: 27px 0px 10px 27px;
+  max-width: 40px;
+  border-bottom: 2px solid #99E2D0;
+  font-family: sans-serif;
+}
+
+.text-1, p {
+  padding: 7px 11px 0px 12px;
+  font-size: small;
+  font-family: sans-serif;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.text-1 p, p p {
+  font-family: sans-serif;
+  padding-left: 1px;
+}
+
+.text-2 {
+  display: flex;
+  justify-content: end;
+  margin: -18px 14px 0px 0px;
+  padding: 3px 6px 9px 0px;
+  font-size: 16px;
+}
+
+.sous-menu {
+  padding: 0px 11px 0px 0px;
 }
 
 /** Chargement style Components*/
@@ -600,8 +645,12 @@ a {
     margin-left: 242px;
   }
 
+  .bloc-text {
+    padding: 9px 16px 1px 15px;
+  }
+
   .coeur {
-    right: -70px;
+    right: -285px;
   }
 }
 /*************** mode descktop *************/
@@ -642,6 +691,10 @@ a {
 }
 /*************** mode Ipad *************/
 @media all and (min-width: 768px) {
+  .con-section h1 {
+    padding: 25px 1px 10px 72px;
+  }
+
   .bloc-menu {
     margin: 10px 50px 50px 50px;
   }
@@ -681,49 +734,5 @@ a {
   }
 }
 /***************page_Francaise*******/
-.con-section {
-  background: #f2f2f2;
-  margin-top: -43px;
-  border-top-right-radius: 40px;
-  border-top-left-radius: 40px;
-  position: relative;
-  width: 100%;
-}
-.con-section h1 {
-  font-family: Shrikhand;
-  padding: 25px 1px 10px 12px;
-}
-
-.titres {
-  margin: 27px 0px 10px 27px;
-  max-width: 40px;
-  border-bottom: 2px solid #99E2D0;
-  font-family: sans-serif;
-}
-
-.text-1, p {
-  padding: 7px 11px 0px 12px;
-  font-size: small;
-  font-family: sans-serif;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.text-1 p, p p {
-  font-family: sans-serif;
-  padding-left: 1px;
-}
-
-.text-2 {
-  display: flex;
-  justify-content: end;
-  margin: -18px 14px 0px 0px;
-  padding: 3px 6px 9px 0px;
-  font-size: 16px;
-}
-
-.sous-menu {
-  padding: 0px 11px 0px 0px;
-}
 
 /*# sourceMappingURL=style.css.map */
