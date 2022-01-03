@@ -19,7 +19,7 @@
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
             overflow: hidden;
-            transition: 500ms;
+            transition: 1000ms;
             margin: -71px 0px 12px 235px;
             .fa-check-circle{
                 font-size: 2rem;
@@ -36,12 +36,12 @@
                width: 78%;
             }
             .check{
-               transition: width 500ms;
+               transition: width 1000ms;
                width: 20%;
                
             }
             .fa-check-circle{           
-                animation: rotating 500ms;
+                animation: rotating 800ms;
              }
             @keyframes rotating{
                 from{

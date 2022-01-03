@@ -319,7 +319,7 @@ i.fa-arrow-left {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   overflow: hidden;
-  transition: 500ms;
+  transition: 1000ms;
   margin: -71px 0px 12px 235px;
 }
 .bloc-m .check .fa-check-circle {
@@ -336,11 +336,11 @@ i.fa-arrow-left {
   width: 78%;
 }
 .bloc-m:hover .check {
-  transition: width 500ms;
+  transition: width 1000ms;
   width: 20%;
 }
 .bloc-m:hover .fa-check-circle {
-  animation: rotating 500ms;
+  animation: rotating 800ms;
 }
 @keyframes rotating {
   from {
@@ -695,6 +695,11 @@ a {
     display: flex;
     justify-content: space-around;
   }
+
+  svg {
+    width: 20%;
+    fill: none;
+  }
 }
 /*************** mode Ipad *************/
 @media all and (min-width: 768px) {
@@ -740,6 +745,5 @@ a {
     margin: 0px 28px 25px 652px;
   }
 }
-/***************page_Francaise*******/
 
 /*# sourceMappingURL=style.css.map */
