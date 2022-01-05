@@ -1,3 +1,6 @@
+/*color*/
+/*duration*/
+/*beraklpoint*/
 /********************* breakpoints pour une mise en page responsive ipad *****/
 /********************* breakpoints pour une mise en page responsive descktop *****/
 .coeur,
@@ -12,7 +15,7 @@
   position: relative;
   bottom: 38px;
   right: -85%;
-  background-color: black;
+  background-color: #000000;
   border-color: transparent;
 }
 .coeur:hover i.coeur__cadre,
@@ -51,7 +54,7 @@
 }
 .coeur i.blanche,
 .coeur-menus i.blanche {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .coeur-menus i.blanche {
@@ -69,7 +72,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: #ffffff;
   animation: loading-disappear 1s 2s;
   animation-fill-mode: forwards;
 }
@@ -267,7 +270,7 @@ i.fa-arrow-left {
 }
 
 .mail {
-  color: #fff;
+  color: #ffffff;
 }
 
 /** Chargement style Components*/
@@ -302,7 +305,7 @@ i.fa-arrow-left {
 }
 
 .bloc-m {
-  background: white;
+  background: #ffffff;
   border-radius: 20px;
   box-shadow: 1px 2px 10px 1px silver;
   margin: 20px;
@@ -326,7 +329,7 @@ i.fa-arrow-left {
 }
 .bloc-m .check .fa-check-circle {
   font-size: 2rem;
-  color: white !important;
+  color: #ffffff !important;
 }
 .bloc-m:hover {
   cursor: pointer;
@@ -552,7 +555,7 @@ input {
 /********************Restaurants*************/
 a {
   text-decoration: none;
-  color: black;
+  color: #000000;
 }
 
 .message {
@@ -575,7 +578,7 @@ a {
 }
 
 .bloc {
-  background-color: white;
+  background-color: #ffffff;
   margin-bottom: 30px;
   border-radius: 12px;
   box-shadow: 0px 3px 5px 2px gainsboro;
@@ -607,7 +610,7 @@ a {
 
 /****************************footer********/
 .con-footer {
-  background-color: #2E2E2E;
+  background-color: #000000;
   color: #ffffff;
   padding: 1.5em;
   padding-bottom: 3em;

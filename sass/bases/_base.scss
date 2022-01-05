@@ -67,7 +67,7 @@ i.fa-arrow-left {
     .titres{
         margin: 27px 0px 10px 27px;
         max-width: 40px;
-        border-bottom: 2px solid #99E2D0;
+        border-bottom: 2px solid $color-tertiaire;
         font-family: sans-serif;
             
         };
@@ -105,5 +105,5 @@ i.fa-arrow-left {
 
 
 .mail{
-    color: #fff;
+    color: $color-clear;
 }

@@ -10,7 +10,7 @@
   position: relative;
   bottom: 38px;
   right: -85%;
-  background-color: black;
+  background-color: $color-dark;
   border-color: transparent;
   
    &:hover{
@@ -54,7 +54,7 @@
       }
    
       i.blanche{
-       background-color: #FFFFFF;
+       background-color: $color-clear;
       }
 }
 .coeur-menus i.blanche{
@@ -77,7 +77,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: $color-clear;
   animation: loading-disappear 1s 2s;
   animation-fill-mode: forwards;
 }
