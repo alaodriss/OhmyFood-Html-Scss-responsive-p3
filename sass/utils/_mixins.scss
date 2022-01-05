@@ -1,0 +1,15 @@
+
+  /********************* breakpoints pour une mise en page responsive ipad *****/
+  @mixin ipad() {
+        @media only screen and (min-width: $sm) {
+            @content;
+        }
+    }
+
+  /********************* breakpoints pour une mise en page responsive descktop *****/
+
+  @mixin descktop() {
+    @media only screen and (min-width: $md) {
+        @content;
+    }
+}

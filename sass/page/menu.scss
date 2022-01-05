@@ -1,6 +1,6 @@
 /*************** mode Ipad *************/
 
-    @media all and (min-width: $sm) {
+@include ipad {
       .con-section h3 {
         padding: 25px 1px 10px 72px;
     }
@@ -18,7 +18,7 @@
 }
 
 /*************** mode descktop *************/
-@media all and (min-width: $md) {
+@include descktop {
 
   .all-menu {
     display: grid;
