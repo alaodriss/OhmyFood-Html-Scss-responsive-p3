@@ -287,6 +287,10 @@ i.fa-arrow-left {
   border: none;
   cursor: pointer;
   margin-top: 20px;
+  transition: transform 350ms;
+}
+.btn:hover {
+  transform: scale(1.13);
 }
 
 /************** btn commander_*****/
@@ -300,8 +304,11 @@ i.fa-arrow-left {
   padding-right: 2em;
   padding-left: 2em;
   border: none;
-  cursor: pointer;
   margin: 20px 28px 25px 110px;
+  transition: transform 350ms;
+}
+.btn-2:hover {
+  transform: scale(1.13);
 }
 
 .bloc-m {

@@ -13,7 +13,12 @@
     border: none;
     cursor: pointer;
     margin-top: 20px;
+    transition: transform 350ms;
+    &:hover {
+        transform: scale(1.13);
+    }
 }
+
 /************** btn commander_*****/
 .btn-2{
     background: linear-gradient(
@@ -26,7 +31,10 @@
             padding-right: 2em;
             padding-left: 2em;
             border: none;
-            cursor: pointer;
             margin: 20px 28px 25px 110px;
+            transition: transform 350ms;
+            &:hover {
+                transform: scale(1.13);
+            }
             
    }
