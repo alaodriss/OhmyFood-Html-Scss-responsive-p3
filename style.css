@@ -3,7 +3,7 @@
 /*beraklpoint*/
 /********************* breakpoints pour une mise en page responsive ipad *****/
 /********************* breakpoints pour une mise en page responsive descktop *****/
-/********************* breakpoints pour une mise en page responsive auto *****/
+/********************* breakpoints pour une mise en page responsive tab *****/
 .coeur,
 .coeur-menus {
   height: 20px;
@@ -199,6 +199,9 @@ svg {
 }
 body {
   font-family: "Roboto";
+  width: 100%;
+  margin: auto;
+  max-width: 2000px;
 }
 
 /*flesh*/
@@ -249,6 +252,12 @@ i.fa-arrow-left {
 .text-1, p {
   padding: 7px 11px 0px 12px;
   font-size: small;
+  font-family: sans-serif;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.text-1 h2, p h2 {
   font-family: sans-serif;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -638,8 +647,8 @@ a {
   padding-right: 10px;
 }
 
-/*************** mode Ipad *************/
-@media only screen and (min-width: 768px) {
+/*************** mode smartphone *************/
+@media only screen and (min-width: 600px) {
   .img-slide {
     width: 100%;
     height: 340px;
@@ -670,7 +679,7 @@ a {
     padding: 9px 16px 1px 15px;
   }
 }
-/*************** mode descktop *************/
+/*************** mode tab *************/
 @media only screen and (min-width: 1024px) {
   .img-slide {
     width: 100%;
@@ -684,41 +693,16 @@ a {
 
   .groupe-restaurants {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
   }
 
   .message {
-    margin-left: 242px;
-  }
-
-  .titre-footer {
-    text-align: center;
-  }
-
-  .list-footer {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  svg {
-    width: 25%;
-    fill: none;
+    margin-left: 371px;
   }
 }
-/*************** mode auto *************/
-@media only screen and (max-width: 4756px) {
-  .img-slide {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-  }
-
-  li {
-    margin: 10px 50px 50px 50px;
-  }
-
+/*************** mode dsk *************/
+@media only screen and (min-width: 1224px) {
   .groupe-restaurants {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -726,10 +710,6 @@ a {
     grid-auto-rows: minmax(100px, auto);
   }
 
-  .message {
-    margin-left: 242px;
-  }
-
   .titre-footer {
     text-align: center;
   }
@@ -739,13 +719,18 @@ a {
     justify-content: space-around;
   }
 
+  .message {
+    margin-left: 250px;
+  }
+
   svg {
     width: 25%;
     fill: none;
   }
 }
-/*************** mode Ipad *************/
-@media only screen and (min-width: 768px) {
+/*************** mode larg *************/
+/*************** mode smart *************/
+@media only screen and (min-width: 600px) {
   .con-section h3 {
     padding: 25px 1px 10px 72px;
   }
@@ -766,8 +751,14 @@ a {
     margin: 0px 28px 25px 312px;
   }
 }
-/*************** mode descktop *************/
+/*************** mode tab *************/
 @media only screen and (min-width: 1024px) {
+  .btn-2 {
+    margin: 0px 0px 41px 433px;
+  }
+}
+/*************** mode descktop *************/
+@media only screen and (min-width: 1224px) {
   .all-menu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -788,27 +779,6 @@ a {
     margin: 0px 28px 25px 652px;
   }
 }
-/*************** mode auto *************/
-@media only screen and (max-width: 4756px) {
-  .all-menu {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-  }
-
-  .bloc-m .check {
-    position: relative;
-    float: right;
-    left: 10px;
-  }
-
-  .bloc-m:hover .text-2 {
-    width: 84%;
-  }
-
-  .btn-2 {
-    margin: 0px 28px 25px 2259px;
-  }
-}
+/*************** mode larg *************/
 
 /*# sourceMappingURL=style.css.map */

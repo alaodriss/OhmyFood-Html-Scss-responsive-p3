@@ -1,6 +1,6 @@
-/*************** mode Ipad *************/
+/*************** mode smart *************/
 
-@include ipad {
+@include smart {
       .con-section h3 {
         padding: 25px 1px 10px 72px;
     }
@@ -16,58 +16,44 @@
         margin: 0px 28px 25px 312px;
       }
 }
+/*************** mode tab *************/
+
+@include tab {
+
+  .btn-2{
+    margin:0px 0px 41px 433px
+  }
+  
+
+}
+
 
 /*************** mode descktop *************/
-@include descktop {
 
+
+@include desktop {
   .all-menu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;  
-
+  
   }
   .bloc-m .check {
     position: relative;
     float: right;
     left: 10px;
-
+  
   }
   .bloc-m:hover .text-2 {
     width:84%;
-}
-
+  }
+  
   .btn-2{
     margin: 0px 28px 25px 652px;
   }
-  
 
 }
 
+/*************** mode larg *************/
 
-/*************** mode auto *************/
 
-
-@include all{
-
-  .all-menu {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;  
-
-  }
-  .bloc-m .check {
-    position: relative;
-    float: right;
-    left: 10px;
-
-  }
-  .bloc-m:hover .text-2 {
-    width:84%;
-}
-
-  .btn-2{
-    margin: 0px 28px 25px 2259px;
-  }
-  
-
-}

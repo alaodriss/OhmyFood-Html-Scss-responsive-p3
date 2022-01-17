@@ -20,11 +20,7 @@
     src: url("./public/fonts/Shrikhand-Regular.ttf");
 }
 
-
-body {
-    font-family: "Roboto";
-}
-
+body{   font-family: "Roboto"; width:100%;margin:auto;max-width:2000px}
 
 /*flesh*/
 
@@ -85,6 +81,12 @@ i.fa-arrow-left {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    h2{
+        font-family: sans-serif;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
      p{
   
         font-family: sans-serif;

@@ -1,6 +1,6 @@
 
   /********************* breakpoints pour une mise en page responsive ipad *****/
-  @mixin ipad() {
+  @mixin smart() {
         @media only screen and (min-width: $sm) {
             @content;
         }
@@ -8,17 +8,25 @@
 
   /********************* breakpoints pour une mise en page responsive descktop *****/
 
-  @mixin descktop() {
+  @mixin tab() {
     @media only screen and (min-width: $md) {
         @content;
     }
 }
 
-  /********************* breakpoints pour une mise en page responsive auto *****/
+  /********************* breakpoints pour une mise en page responsive tab *****/
 
-
-  @mixin all() {
-    @media only screen and (max-width: $mx) {
-        @content;
+  @mixin desktop(){
+    @media only screen and (min-width: $dsk) {
+      @content;
     }
 }
+
+
+@mixin larg(){
+@media only screen and (max-width : $larg) {
+  @content;
+}
+  }
+
+
