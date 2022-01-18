@@ -90,16 +90,21 @@
 a {
     text-decoration: none;
     color: $color-dark;
+    display: block;
+    position: relative;
 }
 .message {
     background-color: $color-tertiaire;
     color: #3e7869;
     position: absolute;
-    margin-top: 20px;
-    margin-left: 230px;
+   /* margin-top: 20px;
+    margin-left: 230px;*/
+
     padding: 0.5em;
     border-radius: 3px;
     font-weight: bold;
+    right: 10px;
+    top: 15px;
 }
 
 .restaurants 
