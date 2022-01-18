@@ -210,7 +210,7 @@ i.fa-arrow-left {
   color: black !important;
   position: absolute;
   left: 6%;
-  top: 27px;
+  top: 4px;
 }
 
 .subtitre {
@@ -266,6 +266,7 @@ i.fa-arrow-left {
 .text-1 p, p p {
   font-family: sans-serif;
   padding-left: 1px;
+  width: 83%;
 }
 
 .text-2 {
