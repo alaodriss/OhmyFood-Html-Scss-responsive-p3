@@ -4,7 +4,7 @@
 
 Projet N° 3 pour la réalisation d'un site web pour le restaurant OhmyFood
 
-Lien du site : https://alaodriss.github.io/alaouidriss_3_06012022
+Lien du site : https://alaodriss.github.io/OhmyFood-Html-Scss-responsive-p3/
 Technologies:
 
 * HTML5
